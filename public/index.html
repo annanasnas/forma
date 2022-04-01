@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Forma.RU</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
+<style>
+  /* Для карусели внутри проекта */
+  .img-fluid.w-100.d-block, .carousel-caption{
+    position: relative;
+  }
+  .carousel-caption{
+    margin-top: 5vh;
+    left: 0;
+  }
+  /* Для стрелок в карусели внутри проекта */
+  .carousel-control-prev-icon, .carousel-control-next-icon{
+    margin-bottom: 15vh;
+  }
+  /* поля ввода в форме */
+  .form-control:focus, .form-control:active {
+    outline: 0px !important;
+    box-shadow: none !important;
+    -webkit-appearance: none;
+}
+  /* убрать background у "+" */
+  button.btn.pluses.btn-info.btn-block.collapsed, .btn-info:not(:disabled):not(.disabled).active, .btn-info:not(:disabled):not(.disabled):active, .show>.btn-info.dropdown-toggle{
+      background-color: transparent;
+      background: none;
+      border-color: transparent;
+      outline: none;
+      box-shadow: none !important;
+      -webkit-appearance: none;
+  }
+
+  div.p-2.small_text{
+    color: #FFFFFF;
+  }
+  form#form_Forma_content{
+    border-top: 0;
+  }
+  div#modal-1___BV_modal_body_.modal-body{
+    padding: 0;
+  }
+  footer#modal-1___BV_modal_footer_.modal-footer{
+    display: none;
+  }
+  header#modal-1___BV_modal_header_.modal-header{
+    background: #0D0D0D;
+    border-bottom: 0px;
+    border-left: 1px solid #FFFFFF;
+    border-right: 1px solid #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+  }
+  div#form_Forma_title2{
+    text-align: start;
+  }
+  div.form-group > input {
+    padding: 0;
+  }
+  small.form-text.text-muted > div, div.form-group > input{
+    text-align: start;
+    color: #5C5C5C;
+  }
+  div.form-group > input::-webkit-input-placeholder { color: #5C5C5C; background-color:#0D0D0D;}
+  button.navbar-toggler.Forma_button, div#form_Forma_title2{
+    font-weight: 500;
+  }
+  button.close{
+    font-size: 90px;
+    right: 5%;
+    top: 3%;
+    position: absolute;
+    color: #FFFFFF;
+    text-shadow: none;
+    opacity: 1;
+    font-weight: 400;
+  }
+  button.close:hover{
+    color: #FFFFFF;
+  }
+/* for carousel */
+  body{
+    margin: 0px;
+    padding: 0px;
+    background: #0D0D0D;
+  }
+  /* div#bb___BV_inner_.carousel-inner{
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    height: 100%;
+  } */
+  div#a123.container{
+    padding: 0px;
+    margin: 0px;
+  }
+  .carousel-indicators{
+    margin-right: 0%;
+    margin-left: 0%;
+    justify-content: flex-start; 
+    position: relative;
+    margin-top: 30px;
+  }
+  .carousel-indicators > li{
+    margin: 0%;
+    width: 3vw;
+    height: 1vh;
+    background: #5C5C5C;
+    /* margin-left: 1%; */
+    margin-right: 2%;
+    /* transition: background 5s ease; */
+  }
+  .carousel-indicators > li.active{
+    background: #FCFCFC;
+  }
+  .carousel-item{
+    height: auto;
+  }
+  .nav.nav-tabs{
+    width: 73%;
+    border-bottom: 2px solid #FFFFFF;
+    padding-bottom: 2vh;
+  }
+  .nav-link{
+    border: none;
+    color: #5C5C5C;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .nav-item:nth-child(1){
+    margin-right: 3.8vw;
+  }
+  .nav-item:nth-child(2){
+    margin-right: 3.75vw;
+  }
+  .nav-item:nth-child(3){
+    margin-right: 3.5vw;
+  }
+  .nav-link:hover{
+    background-color: transparent;
+    color: #FCFCFC;
+  }
+  .nav-tabs .nav-link {
+    border: none;
+  }
+  .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link{
+    background-color: transparent;
+    border: none;
+    color: #FCFCFC;
+  }
+  li.nav-item{
+    text-align: start;
+  }
+  /* .carousel-item{
+    padding-bottom: 380px;
+    margin-bottom: 4%;
+  } */
+  .navbar{
+    position: fixed;
+    z-index: 10;
+  }
+  .Forma_button{
+    height: 2.75rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    border: 2px solid;
+    border-image: linear-gradient(260.5deg, #4E33B8 0%, #01A99A 99.17%);
+    border-image-slice: 1;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+/* Карусель проекта */
+.carousel-caption > h3{
+    font-size: 20px;
+    /* position: absolute; */
+}
+/* .project_carousel > div > div > .carousel-item.active {
+}
+.project_carousel > div > div > .carousel-item.active:nth-child(n){
+} */
+/* Добавить то, чтобы carousel-caption был ниже */
+@media screen and (max-width: 800px){
+  p.card-text{
+      width: 85%;
+    }
+  div.card-body > p.card-text{
+    width: 85%;
+  }
+}
+@media screen and (max-width: 425px){
+    .carousel-indicators{
+      width: 100%;
+      justify-content: space-between;
+    }
+    .carousel-inner{
+      height: 40vh;
+    }
+    .carousel-indicators > li{
+      width: 15%;
+      margin-bottom: 5vh;
+    }
+    .carousel-item.active{
+      height: 30vh;
+    }
+    .carousel-fade.carousel.slide.carousel-fade.pointer-event{
+      height: 32vh;
+    }
+    p.card-text{
+      width: 85%;
+      font-size: 20px;
+    }
+    div.card-body > p.card-text{
+      width: 85%;
+      font-size: 16px;
+    }
+    .carousel-inner{
+      width: 100%;
+      margin-left: 0%;
+      margin-right: 0%;
+    }
+    a.carousel-control-prev,
+    a.carousel-control-next{
+      height: 95vh;
+    }
+    a.carousel-control-prev{
+      margin-left: 20vw;
+    }
+    a.carousel-control-next{
+      margin-right: 20vw;
+    }
+    a.navbar-brand.hover-image.router-link-exact-active.router-link-active > img, a.navbar-brand.hover-image.router-link-active > img{
+      height: 40px;
+    }
+}
+  </style>
